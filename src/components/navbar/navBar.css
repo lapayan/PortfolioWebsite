@@ -1,0 +1,36 @@
+@import @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+:root{ 
+    --mainColor:#F6F3EE; 
+    --textColor: #343434; 
+    --secondaryColor: FFFDF6; 
+    --thirdColor: ECE8D9; 
+}
+
+
+.mainNavBar{ 
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  .homeLink{ 
+    display:flex;
+    justify-content: flex-start;
+    height: 10rem; 
+    width: 10rem;
+    .logo{ 
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .name{
+        font-family: 'Roboto Mono', monospace;
+        display: flex;
+        align-items:bottom;
+        padding-right: 20px;
+        padding-top: 30px;
+        text-decoration-line: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: #D70040;
+        }
+    }
