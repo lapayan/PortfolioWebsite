@@ -1,4 +1,4 @@
-@import @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
 :root{ 
     --mainColor:#F6F3EE; 
     --textColor: #343434; 
@@ -8,29 +8,37 @@
 
 
 .mainNavBar{ 
-  height: 10vh;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 25px;
-  .homeLink{ 
-    display:flex;
-    justify-content: flex-start;
-    height: 10rem; 
-    width: 10rem;
-    .logo{ 
-        height: 100%;
-        width: 100%;
-      }
-    }
+    position:sticky;
+    background-color: var(--mainColor);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
     .name{
-        font-family: 'Roboto Mono', monospace;
-        display: flex;
-        align-items:bottom;
+        font-family: 'Courier Prime', monospace;
+        font-size:.75rem;
         padding-right: 20px;
-        padding-top: 30px;
-        text-decoration-line: underline;
-        text-decoration-style: wavy;
-        text-decoration-color: #D70040;
+        padding-top: 50px;
+     }
+     .socialsContainer{ 
+        display: flex;
+        justify-content: space-between;
+        .github{ 
+            padding-top: 15px;
+            height: 70%;
+            width: 70%;
         }
-    }
+        .linkedIn{ 
+            padding-top: 15px;
+            height: 70%;
+            width: 70%;
+        }
+        .instagram{ 
+            padding-top: 15px;
+            height: 70%;
+            width: 70%;
+        }
+     }
+}
+ 
