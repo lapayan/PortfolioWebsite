@@ -9,36 +9,52 @@
 
 .mainNavBar{ 
     position:sticky;
-    background-color: var(--mainColor);
     height: 10vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items:top;
     margin-bottom: 25px;
     .name{
-        font-family: 'Courier Prime', monospace;
-        font-size:.75rem;
+        display:inline-block;
         padding-right: 20px;
         padding-top: 50px;
+        .text{
+            width: 100%;
+            font-family: 'Courier Prime', monospace;
+            font-size:1.75rem; 
+            border-right:2.5px solid white;
+            white-space: nowrap;
+            overflow: hidden;
+            animation:
+                typing 2s steps(18), 
+                cursor .4s step-end infinite alternate;
+            
+        }
      }
      .socialsContainer{ 
         display: flex;
         justify-content: space-between;
         .github{ 
-            padding-top: 15px;
-            height: 70%;
-            width: 70%;
+            padding-top: 5px;
+            height: 120px;
+            width: 120px;
         }
         .linkedIn{ 
-            padding-top: 15px;
-            height: 70%;
-            width: 70%;
+            padding-top: 5px;
+            height: 120px;
+            width: 120px;
         }
         .instagram{ 
-            padding-top: 15px;
-            height: 70%;
-            width: 70%;
+            padding-top: 5px;
+            height: 120px;
+            width: 120px;
         }
      }
 }
- 
+@keyframes cursor{ 
+    50%{border-color: transparent}
+}
+@keyframes typing{ 
+    from{width:0}
+}

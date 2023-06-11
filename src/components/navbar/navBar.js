@@ -26,13 +26,13 @@ const NavBar = () => {
     return (
         <div className = 'mainNavBar'> 
            <div className = 'name'> 
-                <TypeWriterEffect
-                startDelay={100}
-                cursorColor="black"
-                text='{name: Luis Payan}'
-                typeSpeed={80}
-                eraseSpeed={100}
-                />
+           <p className ='text'>
+           <span style ={{color:'#CBBEC2'}}>{`{`}</span>
+           <span style ={{color:'#E4B781'}}>name</span>
+           <span style ={{color:'#DF769B'}}>: </span>
+           <span style ={{color:'#D67E5C'}} >Luis Payan</span>
+           <span style ={{color:'#CBBEC2'}}>{`}`}</span>
+           </p>
             </div>
             <div className = 'socialsContainer'> 
                 <a href = 'https://github.com/lapayan'>

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+:root{ 
+    --font: 'Courier Prime', monospace;
+}
+.bannerContainer{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 20% 40% 20%;
+    grid-auto-rows: 30%; 
+    .introduction{ 
+        font-family:var(--font);
+        font-size:1.75rem;
+        justify-self:start;
+        align-self:end;
+        grid-area:1/1/2/2; 
+        
+    }
+    .valueStatement{ 
+        align-items: top;
+        justify-self: end;
+        font-family:var(--font);
+        font-size: 1.75rem;
+        grid-area: 2/1/3/3;
+    }
+
+    .button{
+        justify-self:end;
+        grid-area: 3/2/4/2;
+        z-index:1;
+
+    }
+    .logoContainer{ 
+        grid-area:2/3/4/4;
+        .panda{ 
+            height: 40rem; 
+            width: 40rem;
+        }
+    }
+    
+}
