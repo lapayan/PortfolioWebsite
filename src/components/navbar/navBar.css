@@ -23,12 +23,12 @@
             width: 100%;
             font-family: 'Courier Prime', monospace;
             font-size:1.75rem; 
-            border-right:2.5px solid white;
+            border-right:2.5px solid transparent;
             white-space: nowrap;
             overflow: hidden;
             animation:
                 typing 2s steps(18), 
-                cursor .4s step-end infinite alternate;
+                cursor .575s step-end 4.25;
             
         }
      }
@@ -52,9 +52,10 @@
         }
      }
 }
-@keyframes cursor{ 
-    50%{border-color: transparent}
-}
+@keyframes cursor{
+    0,100%{border-color: transparent}
+    50%{ border-color: white}
+  }
 @keyframes typing{ 
     from{width:0}
 }
