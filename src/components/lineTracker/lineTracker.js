@@ -5,7 +5,7 @@ const LineTracker = () => {
     useEffect(() => { 
         let numsArr = [];
         let start = 1
-        while(start < 101){ 
+        while(start < 100){ 
             numsArr.push(start++); 
         }
         setNumberList(numsArr); 

@@ -6,7 +6,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-template-rows: 20% 40% 20%;
-    grid-auto-rows: 30%; 
     .introduction{ 
         font-family:var(--font);
         font-size:1.75rem;

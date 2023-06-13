@@ -6,12 +6,18 @@ import './App.css';
 import {Parallax ,ParallaxLayer} from '@react-spring/parallax'
 function App() {
   return (
-    <div className ='appContainer'> 
-      <LineTracker className = 'lineTrackerLayer'/>
-      <NavBar className = 'navBarLayer'/>
-      <Banner className = 'bannerLayer'/>
+    <div className ='appContainer'>
+      <div className = 'lineTrackerLayer'>
+          <LineTracker className = 'lineTracker'/>
+      </div> 
+      <div className = 'navbarLayer'>
+          <NavBar className = 'navbar'/>
+      </div> 
+      <div className = 'bannerLayer'>
+          <Banner className = 'banner'/>
+      </div> 
     </div> 
-  );
+  ); 
 }
 
 export default App;

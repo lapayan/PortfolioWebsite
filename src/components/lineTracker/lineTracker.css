@@ -5,15 +5,20 @@
 .numberContainer{ 
     display: grid; 
     grid-template-columns: 1.25rem; 
-    grid-template-rows: repeat(auto-fill,minmax(100px, 10%));
-    width: 40px;
-    border-right: 1px solid white; 
+    grid-auto-rows: 1fr;
+    width: 50px;
+    height:100%;
+    border-right: 2.5px solid #715B63; 
     justify-items: center; 
-    align-items: center;
+    align-items: end;
     .number{
+        justify-self: center;
         font-family: var(--font);
-        font-size: 1rem; 
-        padding-left: 10px;
-        border-right: 1px solid white; 
+        color:#715B63; 
+        font-weight: bold;
+        font-size: 1.45rem; 
+        width: 100%;
+        transform: translate(8px, 60px);
+        grid-column: 1/2;
     }
 }
