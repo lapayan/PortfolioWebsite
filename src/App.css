@@ -1,3 +1,25 @@
 *{ 
   background-color:#322A2D;
 }
+@media(min-width:700px){
+  .appContainer{
+    display: grid; 
+    grid-template-columns: .25fr 3fr; 
+    grid-template-areas:
+    "linetracker navigation"
+    "linetracker banner"
+    "linetracker aboutme";
+    .lineTrackerLayer{ 
+      grid-area: linetracker; 
+      z-index: -1;
+    }
+    .navBarLayer{ 
+      grid-area: navigation; 
+      z-index: 2;
+    }
+    .bannerLayer{ 
+      grid-area: banner;
+      z-index: 1;
+    }
+  }
+} 

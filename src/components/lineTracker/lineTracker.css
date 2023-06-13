@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+:root{ 
+    --font: 'Courier Prime', monospace;
+}
+.numberContainer{ 
+    display: grid; 
+    grid-template-columns: 1.25rem; 
+    grid-template-rows: repeat(auto-fill,minmax(100px, 10%));
+    width: 40px;
+    border-right: 1px solid white; 
+    justify-items: center; 
+    align-items: center;
+    .number{
+        font-family: var(--font);
+        font-size: 1rem; 
+        padding-left: 10px;
+        border-right: 1px solid white; 
+    }
+}
