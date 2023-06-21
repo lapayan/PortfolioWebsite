@@ -5,35 +5,384 @@
 .bannerContainer{ 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: 20% 40% 20%;
+    grid-template-rows: 10rem 15rem 10rem ;
     .introduction{ 
         font-family:var(--font);
-        font-size:1.75rem;
-        justify-self:start;
-        align-self:end;
-        grid-area:1/1/2/2; 
-        
-    }
-    .valueStatement{ 
-        align-items: top;
-        justify-self: end;
-        font-family:var(--font);
-        font-size: 1.75rem;
-        grid-area: 2/1/3/3;
-    }
-
-    .button{
-        justify-self:end;
-        grid-area: 3/2/4/2;
-        z-index:1;
-
-    }
-    .logoContainer{ 
-        grid-area:2/3/4/4;
-        .panda{ 
-            height: 40rem; 
-            width: 40rem;
+        grid-column: span 2; 
+        justify-self: start; 
+        .welcomeText{ 
+            width: 100%;
+            font-family: var(--font);
+            border-right:2.5px solid transparent;
+            white-space: nowrap;
+            overflow: hidden;
+            animation:
+                typing 2s steps(18), 
+                cursor .575s step-end 4.25;
+            animation-delay: 2.5s;
         }
     }
+    .introduction{
+        /* Initial value (hidden through opacity) */
+        opacity: 0;
+        /* Various cross-browser declarations for your animation */
+        -webkit-animation: delayedShow 0.1s forwards;
+        -moz-animation: delayedShow 0.1s forwards;
+        -ms-animation: delayedShow 0.1s forwards;
+        -o-animation: delayedShow 0.1s forwards;
+        animation: delayedShow 0.1s forwards;
+        /* Your delay (in this case 600 seconds) */
+        animation-delay: 2.5s;
+   }
+   .mainValueStatementContainer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row:2/4; 
+    grid-column:1/3;
+    .valueStatementContainer1{
+        grid-row-start:1; 
+        grid-column: 1/-1;
+    }
+    .valueStatementContainer2{
+        grid-row-start:2; 
+        grid-column: 1/-1;
+    }
+    .closingBracket{ 
+        font-family:var(--font);
+        justify-self: start;
+        grid-row-start:3;
+        grid-column-start:1;
+    }
+   }
+    .valueStatementContainer1, .valueStatementContainer2, .closingBracketContainer{
+        font-weight: bold;
+        display:inline-block; 
+        z-index: 1;
+        .valueStatementText1{
+            width:100%;
+            height: auto;
+            font-family: var(--font);
+            border-right:2.5px solid transparent;
+            white-space: nowrap;
+            overflow: hidden;
+            animation:
+                typing 5.55s steps(38, end),
+                cursor .65s step-end 8;
+            animation-delay: 5s;
+
+        }
+        .valueStatementText2{
+            width: 100%;
+            font-family: var(--font);
+            border-right:2.5px solid transparent;
+            white-space: nowrap;
+            overflow: hidden;
+            animation:
+            typing 5.55s steps(40, end),
+            cursor .65s step-end 8;
+            animation-delay:10.45s;
+        }
+        .closingBracket{ 
+            width: 100%;
+            font-family: var(--font);
+            border-right:2.5px solid transparent;
+            white-space: nowrap;
+            overflow: hidden;
+            animation:
+            typing 2s steps(3, end),
+            cursor .575s step-end ;
+            animation-delay:16s;
+        }
+        
+    }
+    .letsConnectButton{ 
+        font-family:var(--font);
+        border: none;
+        outline: none;
+        padding: .5em 1em;
+        background-color:#413036;
+        color:#DF769B;
+        border:2px solid #DF769B;
+        transition: ease-out 0.3s; 
+        box-shadow: inset 0 0 0 0 ;
+        border-radius: 3rem;
+    }
+    .letsConnectButton:hover{
+        box-shadow: inset 300px 0 0 0 #DF769B;
+        color:#413036;
+    }
+    .button{
+        justify-self:center;
+        grid-row-start:3;
+        grid-column:3/5;
+        z-index:1;
+    } 
+    .logoContainer{ 
+        grid-row-start: 1;
+        grid-column: 3/5;
+        z-index:0;
+        align-self: start;
+        justify-self: center;
+        .panda{  
+            background: transparent !important;
+            animation: bounce 2s ease infinite;
+        }
+    } 
+}
+@media (min-width: 1536px) {
+    .introduction{
+        align-self: center; 
+    }
+    .welcomeText{ 
+        font-size:2.5rem; 
+        transform: translateY(-5px);
+    }
+    .valueStatementText1, .valueStatementText2{
+        font-size: 1.75rem;
+        transform:translateY(55px);
+    }
+    .closingBracket{ 
+        font-size:2.5rem;
+        align-self:start;
+        transform: translateY(70px);
+    }
+    .letsConnectButton{ 
+        font-size: 1.5rem; 
+    }
+    .button{
+        align-self: end;
+    }
+    .logoContainer{
+        background-color: transparent !important;
+        transform: scale(1.3);
+        align-self:start;
+    }
+    .panda{ 
+        height: 100%; 
+        width:100%;
+    }
+}
+
+@media (max-width: 1536px) {
+    .introduction{ 
+        font-size:1.75rem;
+        /* transform: translate(5px, 5px); */
+    }
+    .welcomeText{ 
+        font-size:1.75rem; 
+    }
+    .valueStatement{ 
+        font-size: 1.55rem;
+        line-height: 3.45em;
+        /* transform: translate(55px, 59px); */
+    }
+    .letsConnectButton{ 
+        font-size: 1rem; 
+    }
+    .closingBracket{ 
+        font-size:1.75rem;
+        /* transform: translateY(5px); */
+    }
+    .button{
+        transform: translate(-.3rem);
+    }
+    .logoContainer{ 
+        width: 25rem;
+        height: 25rem;
+        transform:translate(-3rem, -1.8rem);
+    }
+    .panda{ 
+        height: 28rem; 
+        width: 30rem;
+    }
+}
+  
+@media (max-width: 1280px) {
+    .introduction{ 
+        font-size:1.75rem;
+        /* transform: translate(5px, 5px); */
+    }
+    .welcomeText{ 
+        font-size:1.75rem; 
+    }
+    .valueStatement{ 
+        font-size: 1.55rem;
+        line-height: 3.45em;
+        /* transform: translate(55px, 59px); */
+    }
+    .letsConnectButton{ 
+        font-size: 1rem; 
+    }
+    .closingBracket{ 
+        font-size:1.75rem;
+        /* transform: translateY(5px); */
+    }
+    .button{
+        transform: translate(-.3rem);
+    }
+    .logoContainer{ 
+        width: 25rem;
+        height: 25rem;
+        transform:translate(-3rem, -1.8rem);
+    }
+    .panda{ 
+        height: 28rem; 
+        width: 30rem;
+    }
+}
+  
+@media (max-width: 1024px) {
+    .introduction{ 
+        font-size:1.75rem;
+        /* transform: translate(5px, 5px); */
+    }
+    .welcomeText{ 
+        font-size:1.75rem; 
+    }
+    .valueStatement{ 
+        font-size: 1.55rem;
+        line-height: 3.45em;
+        /* transform: translate(55px, 59px); */
+    }
+    .letsConnectButton{ 
+        font-size: 1rem; 
+    }
+    .closingBracket{ 
+        font-size:1.75rem;
+        /* transform: translateY(5px); */
+    }
+    .button{
+        transform: translate(-.3rem);
+    }
+    .logoContainer{ 
+        width: 25rem;
+        height: 25rem;
+        transform:translate(-3rem, -1.8rem);
+    }
+    .panda{ 
+        height: 28rem; 
+        width: 30rem;
+    }
+}
+  
+@media (max-width: 768px) {
+    .introduction{ 
+        font-size:1.75rem;
+        /* transform: translate(5px, 5px); */
+    }
+    .welcomeText{ 
+        font-size:1.75rem; 
+    }
+    .valueStatement{ 
+        font-size: 1.55rem;
+        line-height: 3.45em;
+        /* transform: translate(55px, 59px); */
+    }
+    .letsConnectButton{ 
+        font-size: 1rem; 
+    }
+    .closingBracket{ 
+        font-size:1.75rem;
+        /* transform: translateY(5px); */
+    }
+    .button{
+        transform: translate(-.3rem);
+    }
+    .logoContainer{ 
+        width: 25rem;
+        height: 25rem;
+        transform:translate(-3rem, -1.8rem);
+    }
+    .panda{ 
+        height: 28rem; 
+        width: 30rem;
+    }
+}
+  
+@media (max-width: 640px) {
+    .introduction{ 
+        font-size:1.75rem;
+        /* transform: translate(5px, 5px); */
+    }
+    .welcomeText{ 
+        font-size:1.75rem; 
+    }
+    .valueStatement{ 
+        font-size: 1.55rem;
+        line-height: 3.45em;
+        /* transform: translate(55px, 59px); */
+    }
+    .letsConnectButton{ 
+        font-size: 1rem; 
+    }
+    .closingBracket{ 
+        font-size:1.75rem;
+        /* transform: translateY(5px); */
+    }
+    .button{
+        transform: translate(-.3rem);
+    }
+    .logoContainer{ 
+        width: 25rem;
+        height: 25rem;
+        transform:translate(-3rem, -1.8rem);
+    }
+    .panda{ 
+        height: 28rem; 
+        width: 30rem;
+    }
+}
+  
+@media (max-width: 475px) {
+    .introduction{ 
+        font-size:1.75rem;
+        /* transform: translate(5px, 5px); */
+    }
+    .welcomeText{ 
+        font-size:1.75rem; 
+    }
+    .valueStatement{ 
+        font-size: 1.55rem;
+        line-height: 3.45em;
+        /* transform: translate(55px, 59px); */
+    }
+    .letsConnectButton{ 
+        font-size: 1rem; 
+    }
+    .closingBracket{ 
+        font-size:1.75rem;
+        /* transform: translateY(5px); */
+    }
+    .button{
+        transform: translate(-.3rem);
+    }
+    .logoContainer{ 
+        width: 25rem;
+        height: 25rem;
+        transform:translate(-3rem, -1.8rem);
+    }
+    .panda{ 
+        height: 28rem; 
+        width: 30rem;
+    }
+}       
     
+    
+@keyframes cursor{
+    0%{border-color: transparent}
+    50%{ border-color: white}
+    100%{border-color: transparent}
+  }
+@keyframes typing{ 
+    from{width:0}
+}
+@keyframes delayedShow {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-20px);}
+	60% {transform: translateY(-15px);}
 }

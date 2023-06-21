@@ -8,21 +8,6 @@ import './navBar.css';
 
 
 const NavBar = () => {
-    const [text, setText] = useState('');
-    const [fullText, setfullText] = useState('<Luis Payan/>');
-    const [index,setIndex] = useState(0);
-    //
-    
-    useEffect(() => {
-        if (index < fullText.length) {
-          setTimeout(() => {
-            setText(text + fullText[index])
-            setIndex(index + 1)
-          }, 400)
-        }
-      }, [index]);
-
-    //
     return (
         <div className = 'mainNavBar'> 
            <div className = 'name'> 

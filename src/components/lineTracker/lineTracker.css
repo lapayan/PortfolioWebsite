@@ -6,7 +6,7 @@
     display: grid; 
     grid-template-columns: 1.25rem; 
     grid-auto-rows: 1fr;
-    width: 50px;
+    width: 75px;
     height:100%;
     border-right: 2.5px solid #715B63; 
     justify-items: center; 
@@ -16,9 +16,217 @@
         font-family: var(--font);
         color:#715B63; 
         font-weight: bold;
-        font-size: 1.45rem; 
         width: 100%;
-        transform: translate(8px, 60px);
         grid-column: 1/2;
+    }
+}
+@media (min-width: 1536px) {
+    .number{
+        font-size: 2.15rem; 
+        transform: translate(8px, 0rem);
+    }
+}
+
+@media (max-width: 1536px) {
+    .introduction{ 
+        font-size:1.75rem;
+        /* transform: translate(5px, 5px); */
+    }
+    .welcomeText{ 
+        font-size:1.75rem; 
+    }
+    .valueStatement{ 
+        font-size: 1.55rem;
+        line-height: 3.45em;
+        /* transform: translate(55px, 59px); */
+    }
+    .letsConnectButton{ 
+        font-size: 1rem; 
+    }
+    .closingBracket{ 
+        font-size:1.75rem;
+        /* transform: translateY(5px); */
+    }
+    .button{
+        transform: translate(-.3rem);
+    }
+    .logoContainer{ 
+        width: 25rem;
+        height: 25rem;
+        transform:translate(-3rem, -1.8rem);
+    }
+    .panda{ 
+        height: 28rem; 
+        width: 30rem;
+    }
+}
+  
+@media (max-width: 1280px) {
+    .introduction{ 
+        font-size:1.75rem;
+        /* transform: translate(5px, 5px); */
+    }
+    .welcomeText{ 
+        font-size:1.75rem; 
+    }
+    .valueStatement{ 
+        font-size: 1.55rem;
+        line-height: 3.45em;
+        /* transform: translate(55px, 59px); */
+    }
+    .letsConnectButton{ 
+        font-size: 1rem; 
+    }
+    .closingBracket{ 
+        font-size:1.75rem;
+        /* transform: translateY(5px); */
+    }
+    .button{
+        transform: translate(-.3rem);
+    }
+    .logoContainer{ 
+        width: 25rem;
+        height: 25rem;
+        transform:translate(-3rem, -1.8rem);
+    }
+    .panda{ 
+        height: 28rem; 
+        width: 30rem;
+    }
+}
+  
+@media (max-width: 1024px) {
+    .introduction{ 
+        font-size:1.75rem;
+        /* transform: translate(5px, 5px); */
+    }
+    .welcomeText{ 
+        font-size:1.75rem; 
+    }
+    .valueStatement{ 
+        font-size: 1.55rem;
+        line-height: 3.45em;
+        /* transform: translate(55px, 59px); */
+    }
+    .letsConnectButton{ 
+        font-size: 1rem; 
+    }
+    .closingBracket{ 
+        font-size:1.75rem;
+        /* transform: translateY(5px); */
+    }
+    .button{
+        transform: translate(-.3rem);
+    }
+    .logoContainer{ 
+        width: 25rem;
+        height: 25rem;
+        transform:translate(-3rem, -1.8rem);
+    }
+    .panda{ 
+        height: 28rem; 
+        width: 30rem;
+    }
+}
+  
+@media (max-width: 768px) {
+    .introduction{ 
+        font-size:1.75rem;
+        /* transform: translate(5px, 5px); */
+    }
+    .welcomeText{ 
+        font-size:1.75rem; 
+    }
+    .valueStatement{ 
+        font-size: 1.55rem;
+        line-height: 3.45em;
+        /* transform: translate(55px, 59px); */
+    }
+    .letsConnectButton{ 
+        font-size: 1rem; 
+    }
+    .closingBracket{ 
+        font-size:1.75rem;
+        /* transform: translateY(5px); */
+    }
+    .button{
+        transform: translate(-.3rem);
+    }
+    .logoContainer{ 
+        width: 25rem;
+        height: 25rem;
+        transform:translate(-3rem, -1.8rem);
+    }
+    .panda{ 
+        height: 28rem; 
+        width: 30rem;
+    }
+}
+  
+@media (max-width: 640px) {
+    .introduction{ 
+        font-size:1.75rem;
+        /* transform: translate(5px, 5px); */
+    }
+    .welcomeText{ 
+        font-size:1.75rem; 
+    }
+    .valueStatement{ 
+        font-size: 1.55rem;
+        line-height: 3.45em;
+        /* transform: translate(55px, 59px); */
+    }
+    .letsConnectButton{ 
+        font-size: 1rem; 
+    }
+    .closingBracket{ 
+        font-size:1.75rem;
+        /* transform: translateY(5px); */
+    }
+    .button{
+        transform: translate(-.3rem);
+    }
+    .logoContainer{ 
+        width: 25rem;
+        height: 25rem;
+        transform:translate(-3rem, -1.8rem);
+    }
+    .panda{ 
+        height: 28rem; 
+        width: 30rem;
+    }
+}
+  
+@media (max-width: 475px) {
+    .introduction{ 
+        font-size:1.75rem;
+        /* transform: translate(5px, 5px); */
+    }
+    .welcomeText{ 
+        font-size:1.75rem; 
+    }
+    .valueStatement{ 
+        font-size: 1.55rem;
+        line-height: 3.45em;
+        /* transform: translate(55px, 59px); */
+    }
+    .letsConnectButton{ 
+        font-size: 1rem; 
+    }
+    .closingBracket{ 
+        font-size:1.75rem;
+        /* transform: translateY(5px); */
+    }
+    .button{
+        transform: translate(-.3rem);
+    }
+    .logoContainer{ 
+        width: 25rem;
+        height: 25rem;
+        transform:translate(-3rem, -1.8rem);
+    }
+    .panda{ 
+        height: 28rem; 
+        width: 30rem;
     }
 }

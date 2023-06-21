@@ -16,14 +16,12 @@
     align-items:top;
     margin-bottom: 25px;
     .name{
-        display:inline-block;
-        padding-left: 10px; 
+        display:inline-block; 
         padding-right: 20px;
         padding-top: 50px;
         .text{
             width: 100%;
             font-family: 'Courier Prime', monospace;
-            font-size:1.75rem; 
             border-right:2.5px solid transparent;
             white-space: nowrap;
             overflow: hidden;
@@ -36,23 +34,145 @@
      .socialsContainer{ 
         display: flex;
         justify-content: space-between;
-        .github{ 
-            padding-top: 5px;
-            height: 120px;
-            width: 120px;
-        }
-        .linkedIn{ 
-            padding-top: 5px;
-            height: 120px;
-            width: 120px;
-        }
-        .instagram{ 
-            padding-top: 5px;
-            height: 120px;
-            width: 120px;
-        }
+        align-items: center;
      }
 }
+@media (min-width: 1536px) {
+    .name{ 
+        transform: translateX(-5px);
+    }
+    .text{
+        font-size: 2.75rem;
+        transform: translateY(-30 px);
+    }
+    .github{ 
+        height: 200px;
+        width: 200px;
+        transform: translateY(10px);
+        z-index: -1;
+    }
+    .linkedIn{
+        height: 200px;
+        width: 200px;
+        transform: translateY(10px);
+        z-index: -1;
+    }
+    .instagram{ 
+        height: 200px;
+        width: 200px;
+        transform: translateY(10px);
+        z-index: -1;
+    }
+}
+
+@media (max-width: 1536px) {
+    .text{
+        font-size: 1.25rem;
+    }
+    .github{ 
+        height: 120px;
+        width: 120px;
+    }
+    .linkedIn{
+        height: 120px;
+        width: 120px;
+    }
+    .instagram{ 
+        height: 120px;
+        width: 120px;
+    }
+}
+  
+@media (max-width: 1280px) {
+    .text{
+        font-size: 1.25rem;
+    }
+    .github{ 
+        height: 120px;
+        width: 120px;
+    }
+    .linkedIn{
+        height: 120px;
+        width: 120px;
+    }
+    .instagram{ 
+        height: 120px;
+        width: 120px;
+    }
+}
+  
+@media (max-width: 1024px) {
+    .text{
+        font-size: 1.25rem;
+    }
+    .github{ 
+        height: 120px;
+        width: 120px;
+    }
+    .linkedIn{
+        height: 120px;
+        width: 120px;
+    }
+    .instagram{ 
+        height: 120px;
+        width: 120px;
+    }
+}
+  
+@media (max-width: 768px) {
+    .text{
+        font-size: 1.25rem;
+    }
+    .github{ 
+        height: 120px;
+        width: 120px;
+    }
+    .linkedIn{
+        height: 120px;
+        width: 120px;
+    }
+    .instagram{ 
+        height: 120px;
+        width: 120px;
+    }
+}
+  
+@media (max-width: 640px) {
+    .text{
+        font-size: 1.25rem;
+    }
+    .github{ 
+        height: 120px;
+        width: 120px;
+    }
+    .linkedIn{
+        height: 120px;
+        width: 120px;
+    }
+    .instagram{ 
+        height: 120px;
+        width: 120px;
+    }
+}
+  
+@media (max-width: 475px) {
+    .text{
+        font-size: 1.25rem;
+    }
+    .github{ 
+        height: 120px;
+        width: 120px;
+    }
+    .linkedIn{
+        height: 120px;
+        width: 120px;
+    }
+    .instagram{ 
+        height: 120px;
+        width: 120px;
+    }
+}
+
 @keyframes cursor{
     0,100%{border-color: transparent}
     50%{ border-color: white}
