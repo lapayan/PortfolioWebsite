@@ -26,8 +26,10 @@
 #navbarContainer{
     grid-row-start: 1;
     grid-column: 1/-1;;
+    border-left: 2.5px solid #715B63; 
 } 
 #bannerContainer{
     grid-row-start: 2; 
     grid-column: 1/-1;
+    border-left: 2.5px solid #715B63; 
 }

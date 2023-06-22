@@ -22,18 +22,44 @@
             animation-delay: 2.5s;
         }
     }
-    .introduction{
-        /* Initial value (hidden through opacity) */
+/*Delays for typing animation*/
+.introduction{
+    opacity: 0;
+    -webkit-animation: delayedShow 0.1s forwards;
+    -moz-animation: delayedShow 0.1s forwards;
+    -ms-animation: delayedShow 0.1s forwards;
+    -o-animation: delayedShow 0.1s forwards;
+    animation: delayedShow 0.1s forwards;
+    animation-delay: 2.5s;
+   }
+   .valueStatementContainer1{
+    opacity: 0;
+    -webkit-animation: delayedShow 0.1s forwards;
+    -moz-animation: delayedShow 0.1s forwards;
+    -ms-animation: delayedShow 0.1s forwards;
+    -o-animation: delayedShow 0.1s forwards;
+    animation: delayedShow 0.1s forwards;
+    animation-delay: 5s;
+    }
+    .valueStatementContainer2{
         opacity: 0;
-        /* Various cross-browser declarations for your animation */
         -webkit-animation: delayedShow 0.1s forwards;
         -moz-animation: delayedShow 0.1s forwards;
         -ms-animation: delayedShow 0.1s forwards;
         -o-animation: delayedShow 0.1s forwards;
         animation: delayedShow 0.1s forwards;
-        /* Your delay (in this case 600 seconds) */
-        animation-delay: 2.5s;
+        animation-delay: 9s;
    }
+   .closingBracketContainer{
+    opacity: 0;
+    -webkit-animation: delayedShow 0.1s forwards;
+    -moz-animation: delayedShow 0.1s forwards;
+    -ms-animation: delayedShow 0.1s forwards;
+    -o-animation: delayedShow 0.1s forwards;
+    animation: delayedShow 0.1s forwards;
+    animation-delay: 13.15s;
+    }
+/**************************************************/
    .mainValueStatementContainer{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -48,8 +74,7 @@
         grid-row-start:2; 
         grid-column: 1/-1;
     }
-    .closingBracket{ 
-        font-family:var(--font);
+    .closingBracketContainer{ 
         justify-self: start;
         grid-row-start:3;
         grid-column-start:1;
@@ -67,8 +92,8 @@
             white-space: nowrap;
             overflow: hidden;
             animation:
-                typing 5.55s steps(38, end),
-                cursor .65s step-end 8;
+                typing 4s steps(38, end),
+                cursor .6s step-end 6.5;
             animation-delay: 5s;
 
         }
@@ -79,9 +104,9 @@
             white-space: nowrap;
             overflow: hidden;
             animation:
-            typing 5.55s steps(40, end),
-            cursor .65s step-end 8;
-            animation-delay:10.45s;
+            typing 4s steps(40, end),
+            cursor .6s step-end 6.5;
+            animation-delay:9s;
         }
         .closingBracket{ 
             width: 100%;
@@ -90,9 +115,9 @@
             white-space: nowrap;
             overflow: hidden;
             animation:
-            typing 2s steps(3, end),
-            cursor .575s step-end ;
-            animation-delay:16s;
+            typing 1.25s steps(2, end),
+            cursor .5s step-end 2.5 ;
+            animation-delay:13.15s;
         }
         
     }
@@ -135,24 +160,23 @@
         align-self: center; 
     }
     .mainValueStatementContainer{
-        transform: translateY(-5.5vh);
+        transform: translateY(-3.75vh);
     }
     .welcomeText{ 
         font-size:2.5rem; 
-        transform: translateY(-3.55vh);
+        transform: translateY(-2.5vh);
     }
     .valueStatementText1{
         font-size: 1.75rem;
-        transform:translateY(4vh);
+        transform:translateY(3.5vh);
     }
     .valueStatementText2{
         font-size: 1.75rem;
-        transform:translateY(2.5vh);
+        transform:translateY(2.25vh);
     }
     .closingBracket{ 
         font-size:2.5rem;
         align-self:start;
-        /* transform: translateY(vh); */
     }
     .letsConnectButton{ 
         font-size: 1.5rem; 

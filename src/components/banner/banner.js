@@ -23,7 +23,7 @@ const Banner = () =>{
                         </div>
                     </div>
                     <div className='closingBracketContainer'>
-                       <span className = 'closingBracket'style ={{color:'#CBBEC2'}}>{`}`}</span> 
+                       <span className = 'closingBracket'style ={{color:'#CBBEC2'}}>{`} `}</span> 
                     </div>
                 </div>
                 <a className = 'button' href="https://www.linkedin.com/in/luis-payan-6814b1243/"> 
