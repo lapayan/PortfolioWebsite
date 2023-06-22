@@ -134,18 +134,25 @@
     .introduction{
         align-self: center; 
     }
+    .mainValueStatementContainer{
+        transform: translateY(-4.5vh);
+    }
     .welcomeText{ 
         font-size:2.5rem; 
-        transform: translateY(-5px);
+        transform: translateY(-3vh);
     }
-    .valueStatementText1, .valueStatementText2{
+    .valueStatementText1{
         font-size: 1.75rem;
-        transform:translateY(55px);
+        transform:translateY(3.5vh);
+    }
+    .valueStatementText2{
+        font-size: 1.75rem;
+        transform:translateY(2vh);
     }
     .closingBracket{ 
         font-size:2.5rem;
         align-self:start;
-        transform: translateY(70px);
+        /* transform: translateY(vh); */
     }
     .letsConnectButton{ 
         font-size: 1.5rem; 
