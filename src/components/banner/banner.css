@@ -135,19 +135,19 @@
         align-self: center; 
     }
     .mainValueStatementContainer{
-        transform: translateY(-4.5vh);
+        transform: translateY(-5.5vh);
     }
     .welcomeText{ 
         font-size:2.5rem; 
-        transform: translateY(-3vh);
+        transform: translateY(-3.55vh);
     }
     .valueStatementText1{
         font-size: 1.75rem;
-        transform:translateY(3.5vh);
+        transform:translateY(4vh);
     }
     .valueStatementText2{
         font-size: 1.75rem;
-        transform:translateY(2vh);
+        transform:translateY(2.5vh);
     }
     .closingBracket{ 
         font-size:2.5rem;

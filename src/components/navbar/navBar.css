@@ -49,7 +49,7 @@
 }
 @media (min-width: 1536px) {
     .name{ 
-        transform: translateY(-2.5vh);
+        transform: translateY(-2.75vh);
     }
     .text{
         font-size: 2.75rem;
