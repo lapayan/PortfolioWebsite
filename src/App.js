@@ -1,6 +1,6 @@
-import React, {Fragment} from'react';
 import Banner from './components/banner/banner';
 import NavBar from './components/navbar/navBar';
+import AboutMe from './components/aboutMe/aboutMe';
 import LineTracker from './components/lineTracker/lineTracker';
 import './styles/utils.css';
 import './styles/mainStyles.css';
@@ -17,6 +17,9 @@ function App() {
         </div> 
         <div className = 'banner container' id='bannerContainer'>
             <Banner className = 'banner'/>
+        </div>
+        <div className = 'aboutMe container' id='aboutMeContainer'>
+            <AboutMe className = 'aboutMe'/>
         </div> 
       </div>
     </div>

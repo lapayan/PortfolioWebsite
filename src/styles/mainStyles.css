@@ -33,3 +33,8 @@
     grid-column: 1/-1;
     border-left: 2.5px solid #715B63; 
 }
+#aboutMeContainer{ 
+    grid-row-start: 4;
+    grid-column: 1/-1;
+    border-left: 2.5px solid #715B63; 
+}

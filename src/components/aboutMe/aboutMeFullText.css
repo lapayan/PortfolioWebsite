@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+:root{ 
+    --font: 'Courier Prime', monospace;
+}
+.mainFullText{
+    border: 2px solid red;
+    z-index: 99999;
+    display:grid;
+    grid-template-rows: repeat(9,4rem);
+}
+
+@media (min-width: 1536px) {
+}
+
+@media (max-width: 1536px) {
+}
+  
+@media (max-width: 1280px) {
+}
+  
+@media (max-width: 1024px) {
+}
+  
+@media (max-width: 768px) {
+
+}
+  
+@media (max-width: 640px) {
+}
+  
+@media (max-width: 475px) {
+}

@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+:root{ 
+    --font: 'Courier Prime', monospace;
+}
+/*Delays for typing animation*/
+.aboutMeintroduction{
+    opacity: 0;
+    -webkit-animation: delayedShow 0.1s forwards;
+    -moz-animation: delayedShow 0.1s forwards;
+    -ms-animation: delayedShow 0.1s forwards;
+    -o-animation: delayedShow 0.1s forwards;
+    animation: delayedShow 0.1s forwards;
+    animation-delay: 11s;
+}
+   .aboutMeContainer1{
+    opacity: 0;
+    -webkit-animation: delayedShow 0.1s forwards;
+    -moz-animation: delayedShow 0.1s forwards;
+    -ms-animation: delayedShow 0.1s forwards;
+    -o-animation: delayedShow 0.1s forwards;
+    animation: delayedShow 0.1s forwards;
+    animation-delay: 13s;
+    }
+    .aboutMeContainer2{
+        opacity: 0;
+        -webkit-animation: delayedShow 0.1s forwards;
+        -moz-animation: delayedShow 0.1s forwards;
+        -ms-animation: delayedShow 0.1s forwards;
+        -o-animation: delayedShow 0.1s forwards;
+        animation: delayedShow 0.1s forwards;
+        animation-delay: 17s;
+        }
+   .aboutMeContainer3{
+    opacity: 0;
+    -webkit-animation: delayedShow 0.1s forwards;
+    -moz-animation: delayedShow 0.1s forwards;
+    -ms-animation: delayedShow 0.1s forwards;
+    -o-animation: delayedShow 0.1s forwards;
+    animation: delayedShow 0.1s forwards;
+    animation-delay: 21s;
+    }
+    .aboutMeContainer4{
+        opacity: 0;
+        -webkit-animation: delayedShow 0.1s forwards;
+        -moz-animation: delayedShow 0.1s forwards;
+        -ms-animation: delayedShow 0.1s forwards;
+        -o-animation: delayedShow 0.1s forwards;
+        animation: delayedShow 0.1s forwards;
+        animation-delay: 25s;
+        }
+        .closingBracketContainerAboutMe{
+            opacity: 0;
+            -webkit-animation: delayedShow 0.1s forwards;
+            -moz-animation: delayedShow 0.1s forwards;
+            -ms-animation: delayedShow 0.1s forwards;
+            -o-animation: delayedShow 0.1s forwards;
+            animation: delayedShow 0.1s forwards;
+            animation-delay: 28.75s;
+        }
+        .clickForMoreButton{
+            opacity: 0;
+            -webkit-animation: delayedShow 0.1s forwards;
+            -moz-animation: delayedShow 0.1s forwards;
+            -ms-animation: delayedShow 0.1s forwards;
+            -o-animation: delayedShow 0.1s forwards;
+            animation: delayedShow 0.1s forwards;
+            animation-delay: 29s;
+        }
+/**************************************************/
+.aboutMeContainer{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 5rem 50rem;
+    .aboutMeintroduction{
+        font-family:var(--font);
+        grid-column: 1/-1; 
+        grid-row-start: 1;
+        justify-self: start;
+        .aboutMeIntroText{ 
+            width: 100%;
+            font-family: var(--font);
+            border-right:2.5px solid transparent;
+            white-space: nowrap;
+            overflow: hidden;
+            animation:
+                typing 2s steps(18), 
+                cursor .575s step-end 4.25;
+            animation-delay: 11s;
+        }
+    }
+    .mainFullText{
+        grid-row:1/-1; 
+        grid-column: 4/9;
+        z-index: 99999;
+    }
+    .mainAboutMeContainer{
+        grid-column:1/-1;
+        grid-row:2/-1; 
+        display: grid;
+        grid-template-columns: repeat(12, minmax(100px, 1fr));
+        grid-template-rows: repeat(7,5rem);
+    }
+    .aboutMeContainer1,
+    .aboutMeContainer2,
+    .aboutMeContainer3{
+        font-family:var(--font);
+        grid-column: 1/8;
+    }
+    .aboutMeContainer1{
+        grid-row-start: 1;
+        .aboutMeText1{ 
+            width:100%;
+            height: auto;
+            font-family: var(--font);
+            border-right:2.5px solid transparent;
+            white-space: nowrap;
+            overflow: hidden;
+            animation:
+                typing 4s steps(38, end),
+                cursor .6s step-end 6.65;
+            animation-delay: 13s;
+        }
+    }
+    .aboutMeContainer2{ 
+        grid-row-start:2;
+        .aboutMeText2{ 
+            width:100%;
+            height: auto;
+            font-family: var(--font);
+            border-right:2.5px solid transparent;
+            white-space: nowrap;
+            overflow: hidden;
+            animation:
+                typing 4s steps(38, end),
+                cursor .6s step-end 6.5;
+            animation-delay: 17s;
+        }
+    }
+    .aboutMeContainer3{ 
+        grid-row-start:4;
+        .aboutMeText3{ 
+            width:100%;
+            height: auto;
+            font-family: var(--font);
+            border-right:2.5px solid transparent;
+            white-space: nowrap;
+            overflow: hidden;
+            animation:
+                typing 4s steps(38, end),
+                cursor .6s step-end 6.525;
+            animation-delay: 21s;
+        }
+    }
+    .aboutMeContainer4{
+        font-family:var(--font);
+        grid-column: 1/6;
+        grid-row-start:5;
+        .aboutMeText4{ 
+            width:100%;
+            height: auto;
+            font-family: var(--font);
+            border-right:2.5px solid transparent;
+            white-space: nowrap;
+            overflow: hidden;
+            animation:
+                typing 4s steps(38, end),
+                cursor .6s step-end 5.75;
+            animation-delay: 25s;
+        }
+    }
+    .closingBracketContainerAboutMe{
+        font-family:var(--font);
+        grid-row-start: 7;
+        grid-column-start:1;
+        .closingBracketAboutMe{ 
+                width:100%;
+                height: auto;
+                font-family: var(--font);
+                border-right:2.5px solid transparent;
+                white-space: nowrap;
+                overflow: hidden;
+                animation:
+                    typing 1.5s steps(2, end),
+                    cursor .5s step-end 2.5 ;
+                animation-delay: 28.75s;
+        }
+    }
+    .expandTextButton{ 
+        font-family:var(--font);
+        font-weight: bold;
+        border: none;
+        outline: none;
+        padding: .5em 1em;
+        background-color:#413036;
+        color:#DF769B;
+        border:2px solid #DF769B;
+        transition: ease-out 0.3s; 
+        box-shadow: inset 0 0 0 0 ;
+        border-radius: 3rem;
+    }
+    .expandTextButton:hover{ 
+        box-shadow: inset 300px 0 0 0 #DF769B;
+        color:#413036;
+    }
+    .clickForMoreButton{ 
+        grid-row-start:5;
+        grid-column: 6/8;
+        justify-self: center;
+        align-self: end;
+        animation: fadeIn 1 ease-in 2s;
+        animation-fill-mode: forwards;
+        animation-delay: 29s;
+    }
+}
+
+@media (min-width: 1536px) {
+    .aboutMeContainer{
+        transform: translateY(-1vh);
+    }
+    .aboutMeIntroText,
+    .closingBracketContainerAboutMe{
+        font-size:2.5rem;
+    }
+    .mainAboutMeContainer{ 
+        transform:translateY(2.5vh);
+    }
+    .aboutMePropertyName{ 
+        font-size: 2rem;
+    }
+    .aboutMeText1,
+    .aboutMeText2,
+    .aboutMeText3,
+    .aboutMeText4{ 
+        font-size: 1.5rem;
+    }
+    .aboutMeContainer2{ 
+        transform: translateY(4vh);
+    }
+    .aboutMeContainer4{
+        transform: translateY(3.5vh);
+    }
+    .closingBracketContainerAboutMe{ 
+        transform: translateY(-1vh);
+    }
+    .expandTextButton{ 
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 1536px) {
+    .number{
+        font-size: 2.3rem; 
+        transform: translate(8px, 0rem);
+    }
+}
+  
+@media (max-width: 1280px) {
+    .number{
+        font-size: 2.3rem; 
+        transform: translate(8px, 0rem);
+    }
+}
+  
+@media (max-width: 1024px) {
+    .number{
+        font-size: 2.3rem; 
+        transform: translate(8px, 0rem);
+    }
+}
+  
+@media (max-width: 768px) {
+    .number{
+        font-size: 2.3rem; 
+        transform: translate(8px, 0rem);
+    }
+}
+  
+@media (max-width: 640px) {
+    .number{
+        font-size: 2.3rem; 
+        transform: translate(8px, 0rem);
+    }
+}
+  
+@media (max-width: 475px) {
+    .number{
+        font-size: 2.3rem; 
+        transform: translate(8px, 0rem);
+    }
+}
+@keyframes cursor{
+    0%{border-color: transparent}
+    50%{ border-color: white}
+    100%{border-color: transparent}
+  }
+@keyframes typing{ 
+    from{width:0}
+}
+@keyframes delayedShow {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeIn{ 
+    0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

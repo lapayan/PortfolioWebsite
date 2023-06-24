@@ -6,20 +6,23 @@ const Banner = () =>{
             <div className="bannerContainer">
                 <div className = "introduction">
                     <div className = 'welcomeText'>
+                        <span style ={{color:'#E66533'}}>{`let `}</span>
+                        <span style ={{color:'#D5971A'}}>{`welcomeMessage`}</span>
+                        <span style ={{color:'#DF769B'}}>{` = `}</span>
                         <span style ={{color:'#CBBEC2'}}>{`{`}</span>
-                        <span style ={{color:'#E4B781'}}>{`welcomeMessage`}</span>
-                        <span style ={{color:'#DF769B'}}>{`:`}</span>
                     </div>
                 </div>
                 <div className='mainValueStatementContainer'>
                     <div className = "valueStatementContainer1">
                         <div className = 'valueStatementText1'>
-                            <span className ='valueStatementLine1'style ={{color:'#D67E5C'}}>I bring beauty into the world through well</span>
+                        <span style ={{color:'#E4B781'}} className = 'valueStatementPropertyName'>{`text`}</span>
+                        <span style ={{color:'#DF769B'}} className = 'valueStatementPropertyName'>{`:`}</span>
+                            <span className ='valueStatementLine1'style ={{color:'#49E9A6'}}>"I bring beauty into the world through well</span>
                         </div>
                     </div>
                     <div className='valueStatementContainer2'>
                         <div className = 'valueStatementText2'>
-                            <span style ={{color:'#D67E5C'}}> designed code and I love learning new skills.</span>
+                            <span style ={{color:'#49E9A6'}}> designed code and I love learning new skills."</span>
                         </div>
                     </div>
                     <div className='closingBracketContainer'>
