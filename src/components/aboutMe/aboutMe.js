@@ -1,13 +1,7 @@
-import React, {useState} from 'react';
-import AboutMeFullText from './aboutMeFullText';
+import AboutMePopup from '../popup/aboutMePopup';
 import './aboutMe.css'; 
 
 const AboutMe = () => {
-    const [isShown, setIsShown] = useState(false);
-    const handleClick = event => {
-      setIsShown(current => !current);
-    };
-    
     return(
         <section className = 'AboutMe' id = 'aboutMe'>
             <div className = 'aboutMeContainer'>
@@ -50,16 +44,8 @@ const AboutMe = () => {
                             </span>
                         </div>
                     </div>
-                    <div className = 'fullTextContainer'>
-                        {isShown && <AboutMeFullText/>}
-                        {isShown && (
-                            <div className = 'closeTextButton'>
-                                <button onClick={handleClick} className='closeButton'>X</button>
-                            </div>
-                        )}
-                    </div>
-                    <div className='clickForMoreButton'> 
-                        <button className = 'expandTextButton' onClick={handleClick}>Click For More!</button> 
+                    <div className = 'aboutMeFullText'>
+                        <AboutMePopup />
                     </div>
                     <div className='closingBracketContainerAboutMe'>
                        <span className = 'closingBracketAboutMe'style ={{color:'#CBBEC2'}}>{`} `}</span> 

@@ -70,7 +70,7 @@
 .aboutMeContainer{ 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: 5rem 50rem;
+    grid-template-rows: 5rem 45rem;
     .aboutMeintroduction{
         font-family:var(--font);
         grid-column: 1/-1; 
@@ -203,8 +203,6 @@
         color:#413036;
     }
     .clickForMoreButton{ 
-        grid-row-start:5;
-        grid-column: 6/8;
         justify-self: center;
         align-self: end;
         animation: fadeIn 1 ease-in 2s;
@@ -244,6 +242,10 @@
     }
     .expandTextButton{ 
         font-size: 1.15rem;
+    }
+    .aboutMeFullText{
+        grid-row-start:5;
+        grid-column: 6/8;
     }
 }
 
