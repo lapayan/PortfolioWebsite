@@ -1,191 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;1,700&display=swap');   
 :root{ 
-    --mainColor:#F6F3EE; 
-    --textColor: #343434; 
-    --secondaryColor: FFFDF6; 
-    --thirdColor: ECE8D9; 
+    --textColor : #151922;
 }
-
-
 .mainNavBar{ 
     position:sticky;
-    height: 10vh;
+    height: 6vh;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: grid; 
+    grid-template-columns: 1fr 1fr ;
     align-items:top;
     margin-bottom: 25px;
-    .name{
-        display:inline-block; 
-        padding-right: 20px;
-        padding-top: 50px;
-        .text{
-            width: 100%;
-            font-family: 'Courier Prime', monospace;
-            border-right:2.5px solid transparent;
-            white-space: nowrap;
-            overflow: hidden;
-            animation:
-                typing 2s steps(18), 
-                cursor .575s step-end 4.25;
-            
-        }
-     }
-     .socialsContainer{ 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: transparent;
-        .github{ 
-            background-color: transparent;
-        }
-        .instagram{ 
-            background-color: transparent;
-        }
-        .linkedIn{ 
-            background-color: transparent;
-        }
-     }
+
+}
+.name{
+    width: 100%;
+    font-family: 'Courier Prime', monospace; 
+    color: var(--textColor);
+}
+a{ 
+    text-decoration: none;
+    color: var(--textColor);
+    font-weight: bold;
+} 
+.navLinks{ 
+    display: flex; 
+    justify-content: space-around;
+    align-items: end;
+    list-style-type: none !important;
+    font-family: 'Courier Prime', monospace;
 }
 @media (min-width: 1536px) {
-    .name{ 
-        transform: translateY(-2vh);
-    }
-    .text{
-        font-size: 2.75rem;
-    }
-    .github{ 
-        height: 200px;
-        width: 200px;
-        transform: translateY(1vh);
-        z-index: -1;
-    }
-    .linkedIn{
-        height: 200px;
-        width: 200px;
-        transform: translateY(1vh);
-        z-index: -1;
-    }
-    .instagram{ 
-        height: 200px;
-        width: 200px;
-        transform: translateY(1vh);
-        z-index: -1;
-    }
 }
 
 @media (max-width: 1536px) {
-    .text{
-        font-size: 1.25rem;
-    }
-    .github{ 
-        height: 120px;
-        width: 120px;
-    }
-    .linkedIn{
-        height: 120px;
-        width: 120px;
-    }
-    .instagram{ 
-        height: 120px;
-        width: 120px;
-    }
+
 }
   
 @media (max-width: 1280px) {
-    .text{
-        font-size: 1.25rem;
-    }
-    .github{ 
-        height: 120px;
-        width: 120px;
-    }
-    .linkedIn{
-        height: 120px;
-        width: 120px;
-    }
-    .instagram{ 
-        height: 120px;
-        width: 120px;
-    }
+
 }
   
 @media (max-width: 1024px) {
-    .text{
-        font-size: 1.25rem;
-    }
-    .github{ 
-        height: 120px;
-        width: 120px;
-    }
-    .linkedIn{
-        height: 120px;
-        width: 120px;
-    }
-    .instagram{ 
-        height: 120px;
-        width: 120px;
-    }
+
 }
   
 @media (max-width: 768px) {
-    .text{
-        font-size: 1.25rem;
-    }
-    .github{ 
-        height: 120px;
-        width: 120px;
-    }
-    .linkedIn{
-        height: 120px;
-        width: 120px;
-    }
-    .instagram{ 
-        height: 120px;
-        width: 120px;
-    }
+
 }
   
 @media (max-width: 640px) {
-    .text{
-        font-size: 1.25rem;
-    }
-    .github{ 
-        height: 120px;
-        width: 120px;
-    }
-    .linkedIn{
-        height: 120px;
-        width: 120px;
-    }
-    .instagram{ 
-        height: 120px;
-        width: 120px;
-    }
+
 }
   
 @media (max-width: 475px) {
-    .text{
-        font-size: 1.25rem;
-    }
-    .github{ 
-        height: 120px;
-        width: 120px;
-    }
-    .linkedIn{
-        height: 120px;
-        width: 120px;
-    }
-    .instagram{ 
-        height: 120px;
-        width: 120px;
-    }
-}
 
-@keyframes cursor{
-    0,100%{border-color: transparent}
-    50%{ border-color: white}
-  }
-@keyframes typing{ 
-    from{width:0}
 }
