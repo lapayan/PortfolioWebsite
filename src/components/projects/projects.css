@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;1,700&display=swap');   
+:root{ 
+    --textColor : #151922;
+}
+
+.projects{
+    grid-row:15/-1;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+    grid-template-rows: repeat(6, 10vh);
+    grid-gap: 10px;
+    width: 80vw;
+    padding-right: 10vw;
+    padding-left: 10vw;
+}
+
+.projectsTitle{ 
+    grid-row-start: 1; 
+    grid-column:4/5;
+    align-self: end;
+    justify-self: center;
+    font-family:'Courier Prime', monospace;
+}
+
+  
+@media (min-width: 1536px) {
+    .projectsTitle{ 
+        font-size:3rem;
+    }
+}
+
+@media (max-width: 1536px) {
+    .navLinks{ 
+        font-size: 1.25rem;
+    }
+}
+  
+@media (max-width: 1280px) {
+    .navLinks{ 
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;1,700&display=swap');   
+:root{ 
+    --textColor : #151922;
+}
+
+.aboutme{
+    grid-row: 5/8;
+    display:grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
+}
+.title{
+    grid-row-start: 1; 
+    grid-column-start:3;
+    align-self: end;
+    justify-self: center;
+    font-family:'Courier Prime', monospace;
+}
+.bitmojiContainer{
+    border: 1px solid #151922;
+    border-radius: 3rem;
+    box-shadow: 10px 5px 5px rgb(181, 181, 181);
+    grid-column: 4/6;
+    grid-row: 3/5;
+    justify-self: center;
+    align-self: center;
+    height: 300px; 
+    width:300px;
+}
+.bitmoji{
+    z-index: 1;
+    grid-column: 4/6;
+    grid-row: 1/-1;
+    justify-self: center;
+    align-self: end;
+    background: transparent !important;
+}
+.abouttextContainer{ 
+    grid-row: 2/-1;
+    grid-column:2/4;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    border-radius: 2rem;
+    align-self: center;
+    justify-self:center;
+    border: 1px solid #151922; 
+    box-shadow: 10px 5px 5px rgb(181, 181, 181);
+    font-family:'Courier Prime', monospace;
+}
+@media (min-width: 1536px) {
+    .abouttextContainer{ 
+        font-size:1.25rem;
+    }
+    .title{ 
+        font-size:3rem;
+    }
+}
+
+@media (max-width: 1536px) {
+    .navLinks{ 
+        font-size: 1.25rem;
+    }
+}
+  
+@media (max-width: 1280px) {
+    .navLinks{ 
+        font-size: 1rem;
+    }
+}

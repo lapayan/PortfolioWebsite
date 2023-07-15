@@ -1,17 +1,20 @@
-import './navBar.css';
 
+import './navBar.css';
+import monogram from '../../assets/monogramlogo.svg';
 const NavBar = () => {
     return (
         <div className = 'mainNavBar'> 
-            <div className='name'>
-                <h1>Luis Payan</h1>
+            <div className='Logo'>
+                <img 
+                    src = {monogram} 
+                    alt='logo' 
+                    style={{ height:150, width: 300 }}/>
             </div>
             <div className = 'navMenu'> 
                 <ul className = 'navLinks'> 
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li className="AboutLink"><a href="#aboutme">About</a></li>
+                    <li className="SkillsLink"><a href="#skills">Skills</a></li>
+                    <li  className="ProjectsLink"><a href="#projects">Projects</a></li>
                 </ul>
             </div>
         </div> 

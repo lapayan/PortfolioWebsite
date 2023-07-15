@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;1,700&display=swap');   
+:root{ 
+    --textColor : #151922;
+}
+
+.skills{
+    grid-row: 9/14;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(9,10vh);
+    grid-gap: 10px;
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+.skillsTitle{ 
+    grid-row-start: 1; 
+    grid-column:3/5;
+    align-self: end;
+    justify-self: center;
+    font-family:'Courier Prime', monospace;
+}
+.technicalTitle{ 
+    grid-row-start:1; 
+    grid-column:2/4;
+}
+.technicalTitle,.softTitle{ 
+    color: #414A4C;
+    font-family:'Courier Prime', monospace;
+}
+/**************************************************************************/
+.frontEndSkills{ 
+    grid-row: 2/6;
+    grid-column: 1/4;
+    border: 1px solid #151922;
+    border-radius: 1.5rem;
+    box-shadow: 10px 5px 5px rgb(181, 181, 181);
+    display:grid; 
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-rows:  5rem 5rem 5rem 5rem 3rem;
+}
+.reactSkill{
+    grid-column: 1/3;
+    grid-row-start: 2;
+    
+}
+.jsSkill{
+    grid-column: 1/3;
+    grid-row-start: 3;
+}
+.cssSkill{
+    grid-column: 1/3;
+    grid-row-start: 4; 
+}
+.typeScriptSkill{ 
+    grid-column: 3/-1;
+    grid-row-start: 2;
+}
+.UiUxSkill{ 
+    grid-column: 3/-1;
+    grid-row-start: 3;
+}
+.reactSkill,
+.jsSkill,
+.cssSkill,
+.typeScriptSkill,
+.UiUxSkill{ 
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+    font-family:'Courier Prime', monospace;
+    justify-self: center;
+}
+.reactSkill h3,
+.jsSkill h3,
+.cssSkill h3,
+.typeScriptSkill h3,
+.UiUxSkill h3{ 
+    margin-bottom: 1vh;
+}
+.reactSkill p,
+.jsSkill p,
+.cssSkill p,
+.typeScriptSkill p,
+.UiUxSkill p{
+    margin-top: 0;
+    padding-bottom: 1.5vh;
+    text-align: start;
+} 
+/**************************************************************************/
+.backEndSkills{ 
+    grid-row: 2/6;
+    grid-column: 4/-1;
+    border: 1px solid #151922;
+    border-radius: 1.5rem;
+    box-shadow: 10px 5px 5px rgb(181, 181, 181);
+    display:grid; 
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-rows:  5rem 5rem 5rem 5rem 3rem;
+}
+.nodeSkill{ 
+    grid-column: 1/3;
+    grid-row-start: 2;
+}
+.reduxSkill{ 
+    grid-column: 1/3;
+    grid-row-start: 3;
+}
+.sqlSkill{ 
+    grid-column: 1/3;
+    grid-row-start: 4;
+}
+.mongoSkill{ 
+    grid-column: 3/-1;
+    grid-row-start: 2;
+}
+.restSkill{ 
+    grid-column: 3/-1;
+    grid-row-start: 3;
+}
+.graphqlSkill{ 
+    grid-column: 3/-1;
+    grid-row-start: 4;
+}
+.nodeSkill,
+.reduxSkill,
+.sqlSkill,
+.mongoSkill,
+.restSkill,
+.graphqlSkill{ 
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+    font-family:'Courier Prime', monospace;
+    justify-self: center;
+}
+.nodeSkill h3,
+.reduxSkill h3,
+.sqlSkill h3,
+.mongoSkill h3,
+.restSkill h3,
+.graphqlSkill h3{ 
+    margin-bottom: 1vh;
+}
+.nodeSkill p,
+.reduxSkill p,
+.sqlSkill p,
+.mongoSkill p,
+.restSkill p,
+.graphqlSkill p{ 
+    margin-top: 0;
+    padding-bottom: 1.5vh;
+    text-align: start;
+}
+/**************************************************************************/
+.softSkills{ 
+    grid-row: 6/10;
+    grid-column: 3/5;
+    border: 1px solid #151922;
+    border-radius: 1.5rem;
+    box-shadow: 10px 5px 5px rgb(181, 181, 181);
+    width: 40vw;
+    display:grid; 
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-rows:  5rem 5rem 5rem 5rem 3rem;
+}
+.softTitle{ 
+    grid-row-start: 1; 
+    grid-column: 2/4;
+}
+.learningSkill{ 
+    grid-row-start: 2; 
+    grid-column: 1/3;
+}
+.commSkill{ 
+    grid-row-start: 3; 
+    grid-column: 1/3;
+}
+.decisivenessSkill{ 
+    grid-row-start: 4; 
+    grid-column: 1/3;
+}
+.leadershipSkill{ 
+    grid-row-start: 2; 
+    grid-column: 3/-1;
+}
+.problemsolvingSkill{ 
+    grid-row-start: 3; 
+    grid-column: 3/-1;
+}
+.adaptabilitySkill{
+    grid-row-start: 4; 
+    grid-column: 3/-1;
+}
+.learningSkill,
+.commSkill,
+.decisivenessSkill,
+.leadershipSkill,
+.problemsolvingSkill,
+.adaptabilitySkill{ 
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+    font-family:'Courier Prime', monospace;
+    justify-self: center;
+}
+.learningSkill h3,
+.commSkill h3,
+.decisivenessSkill h3,
+.leadershipSkill h3,
+.problemsolvingSkill h3,
+.adaptabilitySkill h3{ 
+    padding-bottom: 5vh;
+}
+/**************************************************************************/
+@media (min-width: 1536px) {
+    .skillsTitle{ 
+        font-size:3rem;
+    }
+    .technicalTitle, .softTitle{
+        font-size: 1.75rem;
+    } 
+    .reactSkill div,
+    .jsSkill div,
+    .cssSkill div,
+    .typeScriptSkill div,
+    .UiUxSkill div,
+    .nodeSkill div,
+    .reduxSkill div,
+    .sqlSkill div,
+    .mongoSkill div,
+    .restSkill div,
+    .graphqlSkill div, 
+    .learningSkill div,
+    .commSkill div,
+    .decisivenessSkill div,
+    .leadershipSkill div,
+    .problemsolvingSkill div,
+    .adaptabilitySkill div{ 
+        font-size: 1.25rem;
+        align-self: center;
+    }
+}
+
+@media (max-width: 1536px) {
+    .navLinks{ 
+        font-size: 1.25rem;
+    }
+}
+  
+@media (max-width: 1280px) {
+    .navLinks{ 
+        font-size: 1rem;
+    }
+}
