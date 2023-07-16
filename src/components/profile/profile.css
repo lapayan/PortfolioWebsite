@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 10vh 10vh 10vh 10vh 10vh;
+    width: 97vw;
 }
 .textContainer{
     grid-column-start:2;
@@ -49,6 +50,7 @@ a{
     grid-row-start:4;
     justify-self: start; 
     align-self: end; 
+    padding-bottom: 1.75vh;
 }
 .btn{ 
     font-family: 'Courier Prime', monospace;
@@ -61,11 +63,13 @@ a{
     color: #0C090A;
     background-color: #ffff;
 }
-p,h1,h2{ 
+.textContainer p,
+.textContainer h1,
+.textContainer h2{ 
     text-align: center;
 }
 
-h2{ 
+.textContainer h2{ 
     color: #494F55;
 }
 
@@ -79,17 +83,87 @@ h2{
 }
 
 @media (max-width: 1536px) {
-    .navLinks{ 
-        font-size: 1.25rem;
+    .btn{ 
+        font-size: 1.2rem;
+    }
+    .panda{ 
+        transform: translateY(-5vh);
     }
 }
   
 @media (max-width: 1280px) {
-    .navLinks{ 
+    .btn{ 
         font-size: 1rem;
     }
+    .panda{ 
+        transform: translateY(-5vh);
+    }
 }
+@media (max-width: 1024px) {
+    .textContainer{
+        grid-column: 2/-1;
+    }
+    .textContainer p{
+        font-size: 1rem;
+    }
+
+    .textContainer h2{ 
+        font-size: 1.25rem;
+    }
+    .textContainer h1{ 
+        font-size: 1.35;
+    }
+    .socialsContainer{
+        grid-column: 2/-1;
+        grid-row:5/-1; 
+        display: flex;
+        align-self: flex-end;
+        justify-self: center;
+        padding-bottom: 4vh;
+    }
+    .buttonContainer{
+        align-self:end;
+        justify-self: center;
+        grid-column: 2/-1;
+        grid-row:4/5; 
+    }
+  }
   
+  @media (max-width: 875px) {
+    .textContainer{
+        grid-column: 2/-1;
+    }
+    .textContainer p{
+        font-size: 1rem;
+    }
+
+    .textContainer h2{ 
+        font-size: 1.25rem;
+    }
+    .textContainer h1{ 
+        font-size: 1.35;
+    }
+    .socialsContainer{
+        grid-column: 2/-1;
+        grid-row:5/-1; 
+        display: flex;
+        align-self: flex-end;
+        justify-self: center;
+        padding-bottom: 4vh;
+    }
+    .buttonContainer{
+        align-self:end;
+        justify-self: center;
+        grid-column: 2/-1;
+        grid-row:4/5; 
+    }
+  }
+  
+  @media (max-width: 760px) {
+    .panda{ 
+        transform: scale(.75);
+    }
+  }  
 
 @keyframes bounce2 {
 	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}

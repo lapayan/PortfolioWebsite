@@ -50,10 +50,27 @@ a:hover {
   
 @media (max-width: 1280px) {
     .navLinks{ 
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 }
+
+@media (max-width: 1024px) {
+    .navLinks{ 
+        font-size: 1.25rem;
+    }
+  }
   
+  @media (max-width: 768px) {
+    .navLinks{ 
+        font-size: 1.25rem;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .navLinks{ 
+        font-size: 1.25rem;
+    }
+  }
 
 
   

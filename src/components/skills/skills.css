@@ -11,6 +11,8 @@
     grid-gap: 10px;
     padding-right: 2vw;
     padding-left: 2vw;
+    margin-right: 2vw;
+    justify-self: center;
 }
 .skillsTitle{ 
     grid-row-start: 1; 
@@ -37,6 +39,7 @@
     display:grid; 
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     grid-template-rows:  5rem 5rem 5rem 5rem 3rem;
+    background:transparent !important;
 }
 .reactSkill{
     grid-column: 1/3;
@@ -70,6 +73,7 @@
     gap: 0.5rem;
     font-family:'Courier Prime', monospace;
     justify-self: center;
+    background:transparent !important;
 }
 .reactSkill h3,
 .jsSkill h3,
@@ -134,6 +138,8 @@
     gap: 0.5rem;
     font-family:'Courier Prime', monospace;
     justify-self: center;
+    background:transparent !important;
+
 }
 .nodeSkill h3,
 .reduxSkill h3,
@@ -205,6 +211,7 @@
     gap: 0.5rem;
     font-family:'Courier Prime', monospace;
     justify-self: center;
+    background:transparent !important;
 }
 .learningSkill h3,
 .commSkill h3,
@@ -245,13 +252,99 @@
 }
 
 @media (max-width: 1536px) {
-    .navLinks{ 
-        font-size: 1.25rem;
+    .skillsTitle{ 
+        font-size:3rem;
+    }
+    .technicalTitle, .softTitle{
+        font-size: 1.5rem;
+    } 
+    .reactSkill div,
+    .jsSkill div,
+    .cssSkill div,
+    .typeScriptSkill div,
+    .UiUxSkill div,
+    .nodeSkill div,
+    .reduxSkill div,
+    .sqlSkill div,
+    .mongoSkill div,
+    .restSkill div,
+    .graphqlSkill div, 
+    .learningSkill div,
+    .commSkill div,
+    .decisivenessSkill div,
+    .leadershipSkill div,
+    .problemsolvingSkill div,
+    .adaptabilitySkill div{ 
+        font-size: 1.15rem;
+        align-self: center;
     }
 }
-  
-@media (max-width: 1280px) {
+@media (max-width: 1490px) {
+    .learningSkill,.decisivenessSkill,.commSkill{ 
+        grid-column: 1/2;
+        justify-self: end;
+    }
+    
+    .leadershipSkill,.adaptabilitySkill,.problemsolvingSkill{  
+        grid-column: 2/-1;
+        justify-self: center;
+    }
+    .learningSkill h3,
+    .commSkill h3,
+    .decisivenessSkill h3,
+    .leadershipSkill h3,
+    .problemsolvingSkill h3,
+    .adaptabilitySkill h3{
+        font-size: 1.15rem;
+    }
+}
+@media (max-width: 1290px) {
     .navLinks{ 
         font-size: 1rem;
     }
 }
+@media (max-width: 1024px) {    
+    .bitmoji{ 
+        grid-column: 4/-1;
+        animation: none;
+    }
+    .title{ 
+        font-size:2rem;
+        grid-column: 2/5;
+        justify-self: center;
+    }
+  }
+  
+  @media (max-width: 875px) {
+    .bitmoji{ 
+        grid-column: 5/-1;
+        animation: none;
+        transform: scale(.98);
+    }
+    .abouttextContainer{ 
+        font-size:.9rem;
+        grid-column: 1/5;
+        justify-self: start;
+    }
+    .title{
+        grid-column: 4/-1;
+        justify-self: start;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .abouttextContainer{
+        font-size: 1rem;
+        grid-column: 1/-1;
+        grid-row: 2/5;
+        justify-self: start;
+        margin-right: 10vw ;
+    }
+    .bitmoji{
+        opacity: 0;
+    }
+    .title{ 
+        justify-self: start;
+        grid-column: 5/-1;
+    }
+  }
