@@ -4,7 +4,7 @@ const AboutMe = () => {
     return(
         <div className='aboutme' id = 'aboutme'> 
             <h1 className='title'>About Me</h1>
-            <div className='bitmojiContainer'></div>  
+            {/* <div className='bitmojiContainer'></div>   */}
                 <img    className='bitmoji'
                             src = {bitmoji} 
                             alt='logo' 

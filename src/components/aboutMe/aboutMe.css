@@ -16,7 +16,7 @@
     justify-self: center;
     font-family:'Courier Prime', monospace;
 }
-.bitmojiContainer{
+/* .bitmojiContainer{
     border: 1px solid #151922;
     border-radius: 3rem;
     box-shadow: 10px 5px 5px rgb(181, 181, 181);
@@ -24,9 +24,9 @@
     grid-row: 3/5;
     justify-self: center;
     align-self: center;
-    height: 300px; 
+    height: 350px; 
     width:300px;
-}
+} */
 .bitmoji{
     z-index: 1;
     grid-column: 4/6;
@@ -34,6 +34,7 @@
     justify-self: center;
     align-self: end;
     background: transparent !important;
+    animation: hithere 2s ease infinite;
 }
 .abouttextContainer{ 
     grid-row: 2/-1;
@@ -66,4 +67,12 @@
     .navLinks{ 
         font-size: 1rem;
     }
+}
+
+@keyframes hithere {
+  30% { transform: scale(1.2); }
+  40%, 60% { transform: rotate(-20deg) scale(1.2); }
+  50% { transform: rotate(20deg) scale(1.2); }
+  70% { transform: rotate(0deg) scale(1.2); }
+  100% { transform: scale(1); }
 }

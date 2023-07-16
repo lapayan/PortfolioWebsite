@@ -27,11 +27,10 @@ const Profile = () => {
                     </p>
             </div>
             <div className='socialsContainer'>
-                <a href='https://github.com/lapayan'><img    class='icon'
+                <a href='https://github.com/lapayan'><img class='icon'
                             src = {github} 
                             alt='logo' 
-                            style={{ height:100, width: 100 }}
-                            onclick="location.href='https://github.com/lapayan'"/></a>
+                            style={{ height:100, width: 100 }}/></a>
                 <a href='https://www.linkedin.com/in/luis-payan-6814b1243/'>
                     <img    class='icon'
                             src = {linkedin} 
@@ -39,7 +38,7 @@ const Profile = () => {
                             style={{ height:100, width: 100 }}/></a>
             </div>
             <div className = 'buttonContainer'>
-                <button className= 'btn'>Contact Me!</button>    
+                <button className= 'btn' >Contact Me!</button>    
             </div> 
         </div> 
     )

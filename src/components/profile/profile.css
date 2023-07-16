@@ -27,12 +27,11 @@
 }
 .socialsContainer{
     width: 9vw;
+    height: 9vh;
     grid-column-start: 2;
-    grid-row-start:4;
+    grid-row-start:4;  
     background-color:transparent !important;
     display:flex;
-    padding-top: 2.5vh;
-    padding-right:1vw ;
     justify-content: center;
     justify-self: end;
     align-self: end;
@@ -46,11 +45,10 @@ a{
     background-color:transparent !important; 
 }
 .buttonContainer{
-    padding-top: 2.5vh;
     grid-column-start: 2;
     grid-row-start:4;
     justify-self: start; 
-    align-self: start; 
+    align-self: end; 
 }
 .btn{ 
     font-family: 'Courier Prime', monospace;
