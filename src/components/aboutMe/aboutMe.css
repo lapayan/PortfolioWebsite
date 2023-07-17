@@ -12,7 +12,7 @@
 }
 .title{
     grid-row-start: 1; 
-    grid-column-start:3;
+    grid-column:3/5;
     align-self: end;
     justify-self: center;
     font-family:'Courier Prime', monospace;
@@ -56,18 +56,18 @@
     }
     .title{ 
         font-size:3rem;
+        padding-right: 20vw;
     }
 }
 
 @media (max-width: 1536px) {
     .abouttextContainer{ 
         font-size:1.25rem;
-        
     }
     .title{ 
         font-size:2.5rem;
-        grid-column: 2/4;
-        justify-self: end;
+        grid-column: 2/5;
+        justify-self: center;
     }
 }
   
@@ -78,8 +78,8 @@
     }
     .title{ 
         font-size:2rem;
-        grid-column: 2/4;
-        justify-self: end;
+        grid-column: 2/5;
+        justify-self: center;
     }
 }
 @media (max-width: 1024px) {    
@@ -89,8 +89,9 @@
     }
     .title{ 
         font-size:2rem;
-        grid-column: 2/5;
-        justify-self: center;
+        grid-column: 2/6;
+        justify-self: end;
+        padding-left:10vw;
     }
   }
   
@@ -98,11 +99,11 @@
     .bitmoji{ 
         grid-column: 5/-1;
         animation: none;
-        transform: scale(.98);
+        transform: scale(.8);
     }
     .abouttextContainer{ 
-        font-size:.9rem;
-        grid-column: 1/5;
+        font-size:.75rem;
+        grid-column: 1/-1;
         justify-self: start;
     }
     .title{

@@ -36,6 +36,7 @@
     margin-top: 1vh;
     justify-self: center;
     border-radius: 2rem;
+    width: 80% !important;
 }
 .projectContainer h2{ 
     font-family: 'Courier Prime', monospace;
@@ -55,18 +56,33 @@
 }
 @media (min-width: 1536px) {
     .projectsTitle{ 
-        font-size:3rem;
+        font-size: 3rem;
+    }
+    .projectContainer h2{ 
+        padding-left: 5vw;
     }
 }
 
 @media (max-width: 1536px) {
-    .navLinks{ 
-        font-size: 1.25rem;
+    .projectsTitle{ 
+        font-size: 3rem;
+    }
+    .projectContainer h2{ 
+        padding-left: 5vw;
+    }
+    .projectContainer img{ 
+        margin-left: 2.5vw; 
+        margin-right: 1.5vw;
     }
 }
   
 @media (max-width: 1280px) {
-    .navLinks{ 
-        font-size: 1rem;
-    }
 }
+@media (max-width: 1024px) {    
+  }
+  
+  @media (max-width: 875px) {
+  }
+  
+  @media (max-width: 800px) {
+  }

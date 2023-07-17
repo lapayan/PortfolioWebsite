@@ -98,6 +98,20 @@ a{
     .panda{ 
         transform: translateY(-5vh);
     }
+    .socialsContainer{
+        grid-column: 2/3;
+        grid-row:5/6; 
+        display: flex;
+        align-self: start;
+        justify-self: center;
+        padding-bottom: 4vh;
+    }
+    .buttonContainer{
+        align-self:center;
+        justify-self: center;
+        grid-column: 2/3;
+        grid-row:4/-1; 
+    }
 }
 @media (max-width: 1024px) {
     .textContainer{
