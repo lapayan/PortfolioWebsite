@@ -4,345 +4,112 @@
 }
 
 .skills{
-    grid-row: 9/14;
+    grid-row: 9/16;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(9,10vh);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(13,10vh);
     grid-gap: 10px;
-    padding-right: 2vw;
-    padding-left: 2vw;
-    margin-right: 2vw;
+   
+    width:95vw;
+    margin-right: 5vw;
+    margin-left: 1.5vw;
     justify-self: center;
 }
 .skillsTitle{ 
     grid-row-start: 1; 
-    grid-column:3/5;
+    grid-column:1/-1;
     align-self: end;
     justify-self: center;
     font-family:'Courier Prime', monospace;
 }
 .technicalTitle{ 
     grid-row-start:1; 
-    grid-column:2/4;
-}
-.technicalTitle,.softTitle{ 
-    color: #414A4C;
+    grid-column:1/-1;
     font-family:'Courier Prime', monospace;
-}
-/**************************************************************************/
-.frontEndSkills{ 
-    grid-row: 2/6;
-    grid-column: 1/4;
-    border: 1px solid #151922;
-    border-radius: 1.5rem;
-    box-shadow: 10px 5px 5px rgb(181, 181, 181);
-    display:grid; 
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-template-rows:  5rem 5rem 5rem 5rem 3rem;
-    background:transparent !important;
-}
-.reactSkill{
-    grid-column: 1/3;
-    grid-row-start: 2;
-    
-} 
-.jsSkill{
-    grid-column: 1/3;
-    grid-row-start: 3;
-}
-.cssSkill{
-    grid-column: 1/3;
-    grid-row-start: 4; 
-}
-.typeScriptSkill{ 
-    grid-column: 3/-1; 
-}
-.UiUxSkill{ 
-    grid-column: 3/-1;
-    grid-row-start: 3;
-}
-.reactSkill,
-.jsSkill,
-.cssSkill,
-.typeScriptSkill,
-.UiUxSkill{ 
-    display: flex;
-    width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
-    font-family:'Courier Prime', monospace;
+    color: var(--textColor);
     justify-self: center;
-    background:transparent !important;
 }
-.reactSkill h3,
-.jsSkill h3,
-.cssSkill h3,
-.typeScriptSkill h3,
-.UiUxSkill h3{ 
-    margin-bottom: 1vh;
+#frontEndSkills{ 
+    grid-row:2;
 }
-.reactSkill p,
-.jsSkill p,
-.cssSkill p,
-.typeScriptSkill p,
-.UiUxSkill p{
-    margin-top: 0;
-    padding-bottom: 1.5vh;
-    text-align: start;
-} 
-/**************************************************************************/
-.backEndSkills{ 
-    grid-row: 2/6;
-    grid-column: 4/-1;
-    border: 1px solid #151922;
-    border-radius: 1.5rem;
-    box-shadow: 10px 5px 5px rgb(181, 181, 181);
-    display:grid; 
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-template-rows:  5rem 5rem 5rem 5rem 3rem;
+#backEndSkills{
+    grid-row: 6;
 }
-.nodeSkill{ 
-    grid-column: 1/3;
-    grid-row-start: 2;
+#softSkills{
+    grid-row: 10;
 }
-.reduxSkill{ 
-    grid-column: 1/3;
-    grid-row-start: 3;
-} 
-.sqlSkill{ 
-    grid-column: 1/3;
-    grid-row-start: 4;
-}
-.mongoSkill{ 
-    grid-column: 3/-1;
-    grid-row-start: 2;
-} 
-.restSkill{ 
-    grid-column: 3/-1;
-    grid-row-start: 3;
-}
-.graphqlSkill{ 
-    grid-column: 3/-1;
-    grid-row-start: 4;
-}
-.nodeSkill,
-.reduxSkill,
-.sqlSkill,
-.mongoSkill,
-.restSkill,
-.graphqlSkill{ 
-    display: flex;
-    width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
-    font-family:'Courier Prime', monospace;
+.skillsContainer{ 
+    border: 1px solid black;
+    border-radius: 2.5rem;
+    grid-column: 1/-1;
     justify-self: center;
-    background:transparent !important;
+    align-self: start;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh repeat(2,15vh);
+    justify-items: center;
+    align-content: space-around;
+}
 
-}
-.nodeSkill h3,
-.reduxSkill h3,
-.sqlSkill h3,
-.mongoSkill h3,
-.restSkill h3,
-.graphqlSkill h3{ 
-    margin-bottom: 1vh;
-}
-.nodeSkill p,
-.reduxSkill p,
-.sqlSkill p,
-.mongoSkill p,
-.restSkill p,
-.graphqlSkill p{ 
-    margin-top: 0;
-    padding-bottom: 1.5vh;
-    text-align: start;
-}
-/**************************************************************************/
-.softSkills{ 
-    grid-row: 6/10;
-    grid-column: 3/5;
-    border: 1px solid #151922;
-    border-radius: 1.5rem;
-    box-shadow: 10px 5px 5px rgb(181, 181, 181);
-    width: 40vw;
-    display:grid; 
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    grid-template-rows:  5rem 5rem 5rem 5rem 3rem;
-}
-.softTitle{ 
-    grid-row-start: 1; 
-    grid-column: 2/4;
-}
-.learningSkill{ 
-    grid-row-start: 2; 
-    grid-column: 1/3;
-}
-.commSkill{ 
-    grid-row-start: 3; 
-    grid-column: 1/3;
-}
-.decisivenessSkill{ 
-    grid-row-start: 4; 
-    grid-column: 1/3;
-}
-.leadershipSkill{ 
-    grid-row-start: 2; 
-    grid-column: 3/-1;
-}
-.problemsolvingSkill{ 
-    grid-row-start: 3; 
-    grid-column: 3/-1;
-}
-.adaptabilitySkill{
-    grid-row-start: 4; 
-    grid-column: 3/-1;
-}
-.learningSkill,
-.commSkill,
-.decisivenessSkill,
-.leadershipSkill,
-.problemsolvingSkill,
-.adaptabilitySkill{ 
+.skill{
+    font-family:'Courier Prime', monospace;
+    color: var(--textColor);
     display: flex;
     width: 10rem;
     justify-content: space-around;
     gap: 0.5rem;
-    font-family:'Courier Prime', monospace;
-    justify-self: center;
-    background:transparent !important;
-}
-.learningSkill h3,
-.commSkill h3,
-.decisivenessSkill h3,
-.leadershipSkill h3,
-.problemsolvingSkill h3,
-.adaptabilitySkill h3{ 
-    padding-bottom: 5vh;
+    background: transparent !important;
 }
 /**************************************************************************/
 @media (min-width: 1536px) {
     .skillsTitle{ 
-        font-size:3rem;
+        font-size: 3rem;    
     }
-    .technicalTitle, .softTitle{
+    .technicalTitle{
         font-size: 1.75rem;
-    } 
-    .reactSkill div,
-    .jsSkill div,
-    .cssSkill div,
-    .typeScriptSkill div,
-    .UiUxSkill div,
-    .nodeSkill div,
-    .reduxSkill div,
-    .sqlSkill div,
-    .mongoSkill div,
-    .restSkill div,
-    .graphqlSkill div, 
-    .learningSkill div,
-    .commSkill div,
-    .decisivenessSkill div,
-    .leadershipSkill div,
-    .problemsolvingSkill div,
-    .adaptabilitySkill div{ 
+    }
+    .skill{ 
         font-size: 1.25rem;
-        align-self: center;
     }
 }
 
 @media (max-width: 1536px) {
     .skillsTitle{ 
-        font-size:3rem;
-    }
-    .technicalTitle, .softTitle{
-        font-size: 1.5rem;
-    } 
-    .reactSkill div,
-    .jsSkill div,
-    .cssSkill div,
-    .typeScriptSkill div,
-    .UiUxSkill div,
-    .nodeSkill div,
-    .reduxSkill div,
-    .sqlSkill div,
-    .mongoSkill div,
-    .restSkill div,
-    .graphqlSkill div, 
-    .learningSkill div,
-    .commSkill div,
-    .decisivenessSkill div,
-    .leadershipSkill div,
-    .problemsolvingSkill div,
-    .adaptabilitySkill div{ 
-        font-size: 1.15rem;
-        align-self: center;
-    }
-}
-@media (max-width: 1490px) {
-    .learningSkill,.decisivenessSkill,.commSkill{ 
-        grid-column: 1/2;
-        justify-self: end;
-    }
-    
-    .leadershipSkill,.adaptabilitySkill,.problemsolvingSkill{  
-        grid-column: 2/-1;
-        justify-self: center;
-    }
-    .learningSkill h3,
-    .commSkill h3,
-    .decisivenessSkill h3,
-    .leadershipSkill h3,
-    .problemsolvingSkill h3,
-    .adaptabilitySkill h3{
-        font-size: 1.15rem;
-    }
-}
-@media (max-width: 1292px) {
-    .reactSkill, 
-    .jsSkill, 
-    .cssSkill,
-    .nodeSkill,
-    .reduxSkill,
-    .sqlSkill{ 
-        grid-column: 1/2;
-        justify-self: end;
-    }
-    .mongoSkill,
-    .restSkill,
-    .graphqlSkill,
-    .typeScriptSkill,
-    .UiUxSkill{
-        grid-column: 2/-1;
-        justify-self: center;
+        font-size: 3rem;    
     }
     .technicalTitle{
-        grid-column: 1/-1;
-        justify-self: center;
-        align-self: end;
+        font-size: 1.75rem;
     }
-    .UiUxSkill{ 
-        grid-row: 2;
+    .skill{ 
+        font-size: 1.25rem;
     }
-    .typeScriptSkill{ 
-        grid-row: 3;
+}
+@media (max-width: 1220px){
+    .skillsTitle{ 
+        font-size: 3rem;    
     }
+    .technicalTitle{
+        font-size: 1.5rem;
+    }
+    .skill{ 
+        font-size: 1rem;
+    }
+}
 
-}
-@media (max-width: 1119px){
-    .softTitle{ 
-        grid-column: 1/-1;
-        justify-self: center;
+@media (max-width: 1024px){
+    .skillsTitle{ 
+        font-size: 2rem;    
     }
 }
-@media (max-width: 1024px) {    
-    .bitmoji{ 
-        grid-column: 4/-1;
-        animation: none;
+@media (max-width: 922px){
+    .technicalTitle{
+        font-size: 1.25rem;
     }
-    .title{ 
-        font-size:2rem;
-        grid-column: 2/5;
-        justify-self: center;
+    .skill{ 
+        font-size: .75rem;
     }
-  }
+}  
+
+  
   

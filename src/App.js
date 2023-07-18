@@ -13,7 +13,7 @@ function App() {
       <Profile className = 'profile' id='profile'/>
       <AboutMe className = 'aboutme' id= 'aboutme'/>
       <Skills className = 'skills' id= 'skills'/>
-      <Projects className = 'projects' id= 'projects'/>
+      {/* <Projects className = 'projects' id= 'projects'/> */}
     </div>
   ); 
 }

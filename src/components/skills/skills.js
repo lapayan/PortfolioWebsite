@@ -5,9 +5,9 @@ const Skills = () =>{
     return ( 
         <div className="skills" id="skills"> 
             <h1 className='skillsTitle'>Skills</h1>
-            <div className='frontEndSkills'>
-                <h2 className='technicalTitle'>Frontend Development</h2>\
-                <article className='reactSkill'>
+            <div className="skillsContainer" id='frontEndSkills'>
+                <h2 className='technicalTitle'>Frontend Development</h2>
+                <article className='skill'>
                 <img 
                     src = {checkMark} 
                     alt='logo' 
@@ -17,7 +17,7 @@ const Skills = () =>{
                     <p>Experienced</p>
                     </div> 
                 </article>
-                <article className='jsSkill'>
+                <article className='skill'>
                 <img 
                     src = {checkMark} 
                     alt='logo' 
@@ -27,7 +27,7 @@ const Skills = () =>{
                     <p>Experienced</p>
                     </div> 
                 </article>
-                <article className='cssSkill'>
+                <article className='skill'>
                 <img 
                     src = {checkMark} 
                     alt='logo' 
@@ -37,7 +37,7 @@ const Skills = () =>{
                     <p>Intermediate</p>
                     </div> 
                 </article>
-                <article className='typeScriptSkill'>
+                <article className='skill'>
                 <img 
                     src = {checkMark} 
                     alt='logo' 
@@ -47,7 +47,7 @@ const Skills = () =>{
                     <p>Basic</p>
                     </div> 
                 </article>
-                <article className='UiUxSkill'>
+                <article className='skill'>
                 <img 
                     src = {checkMark} 
                     alt='logo' 
@@ -57,10 +57,20 @@ const Skills = () =>{
                     <p>Intermediate</p>
                     </div> 
                 </article>
+                <article className='skill'>
+                <img 
+                    src = {checkMark} 
+                    alt='logo' 
+                    style={{ height:32, width: 32 }}/>
+                    <div >
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                    </div> 
+                </article>
             </div>
-            <div className ='backEndSkills'>
+            <div className="skillsContainer" id ='backEndSkills'>
                 <h2 className='technicalTitle'>Backend Development</h2>
-                <article className='nodeSkill'>
+                <article className='skill'>
                 <img 
                     src = {checkMark} 
                     alt='logo' 
@@ -70,7 +80,7 @@ const Skills = () =>{
                     <p>Experienced</p>
                     </div> 
                 </article>
-                <article className='reduxSkill'>
+                <article className='skill'>
                 <img 
                     src = {checkMark} 
                     alt='logo' 
@@ -80,7 +90,7 @@ const Skills = () =>{
                     <p>Experienced</p>
                     </div> 
                 </article>
-                <article className='sqlSkill'>
+                <article className='skill'>
                 <img 
                     src = {checkMark} 
                     alt='logo' 
@@ -90,7 +100,7 @@ const Skills = () =>{
                     <p>Intermediate</p>
                     </div> 
                 </article>
-                <article className='mongoSkill'>
+                <article className='skill'>
                 <img 
                     src = {checkMark} 
                     alt='logo' 
@@ -100,7 +110,7 @@ const Skills = () =>{
                     <p>Intermediate</p>
                     </div> 
                 </article>
-                <article className='restSkill'>
+                <article className='skill'>
                 <img 
                     src = {checkMark} 
                     alt='logo' 
@@ -110,7 +120,7 @@ const Skills = () =>{
                     <p>Experienced</p>
                     </div> 
                 </article>
-                <article className='graphqlSkill'>
+                <article className='skill'>
                 <img 
                     src = {checkMark} 
                     alt='logo' 
@@ -121,9 +131,9 @@ const Skills = () =>{
                     </div> 
                 </article>
             </div>
-            <div className='softSkills'>
-                <h2 className='softTitle'>Soft Skills</h2>
-                <article className='learningSkill'>
+            <div className="skillsContainer" id='softSkills'>
+                <h2 className = 'technicalTitle'>Soft Skills</h2>
+                <article className='skill'>
                 <img 
                     src = {checkMark} 
                     alt='logo' 
@@ -132,7 +142,7 @@ const Skills = () =>{
                     <h3>Learning</h3>
                     </div> 
                 </article>
-                <article className='commSkill'>
+                <article className='skill'>
                 <img 
                     src = {checkMark} 
                     alt='logo' 
@@ -141,7 +151,7 @@ const Skills = () =>{
                     <h3>Communication</h3>
                     </div> 
                 </article>
-                <article className='decisivenessSkill'>
+                <article className='skill'>
                 <img 
                     src = {checkMark} 
                     alt='logo' 
@@ -150,7 +160,7 @@ const Skills = () =>{
                     <h3>Decisiveness</h3>
                     </div> 
                 </article>
-                <article className='leadershipSkill'>
+                <article className='skill'>
                 <img 
                     src = {checkMark} 
                     alt='logo' 
@@ -159,7 +169,7 @@ const Skills = () =>{
                     <h3>Leadership</h3>
                     </div> 
                 </article>
-                <article className='problemsolvingSkill'>
+                <article className='skill'>
                 <img 
                     src = {checkMark} 
                     alt='logo' 
@@ -168,7 +178,7 @@ const Skills = () =>{
                     <h3>Problem Solving</h3>
                     </div> 
                 </article>
-                <article className='adaptabilitySkill'>
+                <article className='skill'>
                 <img 
                     src = {checkMark} 
                     alt='logo' 

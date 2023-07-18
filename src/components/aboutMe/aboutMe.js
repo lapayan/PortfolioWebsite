@@ -1,14 +1,14 @@
 import './aboutMe.css'; 
-import bitmoji from '../../assets/Bitmoji.svg';
+import headshot from '../../assets/headshot.png';
 const AboutMe = () => { 
     return(
         <div className='aboutme' id = 'aboutme'> 
             <h1 className='title'>About Me</h1>
-            {/* <div className='bitmojiContainer'></div>   */}
+            <div className='bitmojiContainer'>
                 <img    className='bitmoji'
-                            src = {bitmoji} 
+                            src = {headshot} 
                             alt='logo' 
-                            style={{ height:400, width: 500 }}/>
+                            /></div>  
             
             <div class="abouttextContainer">
                 <p>

@@ -31,12 +31,12 @@
     border-radius: 3rem;
 }
 .projectContainer img{ 
-    margin-left: 2.5vw; 
+    margin-left: 1.5vw; 
     margin-right: 1.5vw;
     margin-top: 1vh;
     justify-self: center;
     border-radius: 2rem;
-    width: 80% !important;
+    width: 85% !important;
 }
 .projectContainer h2{ 
     font-family: 'Courier Prime', monospace;
