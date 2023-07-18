@@ -38,7 +38,7 @@ const Profile = () => {
                             style={{ height:100, width: 100 }}/></a>
             </div>
             <div className = 'buttonContainer'>
-                <button className= 'btn' >Contact Me!</button>    
+                <a href='mailto:luispayan2001@gmail.com'><button className= 'btn' >Contact Me!</button> </a>   
             </div> 
         </div> 
     )

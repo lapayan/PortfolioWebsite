@@ -6,7 +6,7 @@
     grid-row-start: 1;
     position:sticky;
     height: 20vh;
-    width: 98vw;
+    width: 95vw;
     display: grid; 
     grid-template-columns: 1fr 1fr ;
     align-items:top;
