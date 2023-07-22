@@ -86,10 +86,19 @@
         padding-bottom: 3vh;
     }
     .bitmoji{
-        transform: scale(.8);
+        transform: scale(.85);
     }
 }
-  
+@media screen and (max-width:1505px) {
+    .bitmojiContainer{
+        grid-row: 1/-1;
+        height: 55vh;
+    }
+    .bitmoji{ 
+        align-self: center;
+        transform: scale(.75);
+    }
+}
 @media (max-width: 1280px) {
     .abouttextContainer{ 
         font-size:1.10rem;
